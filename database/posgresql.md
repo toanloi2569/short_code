@@ -28,12 +28,12 @@ ex : `sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'password';"`
 # Dump and load database
 **Dump database with password**  
 `PGPASSWORD="$password" pg_dump -U $user -h localhost $dbname > $filename.pgsql`  
-ex : `PGPASSWORD="password" pg_dump -U postgres -h localhost test > db.pgsql`
+ex : `PGPASSWORD="password" pg_dump -U postgres -h localhost test > db.pgsql`  
 
 **Load database with password**  
 `PGPASSWORD="$password" psql -U $user -h localhost $dbname < $filename.pgsql`  
-ex : `PGPASSWORD="password" psql -U postgres -h localhost test < db.pgsql`
+ex : `PGPASSWORD="password" psql -U postgres -h localhost test < db.pgsql`  
 
 **Dump database**  
 `pg_dump -u $user -h localhost $dbname > $filename.pgsql`  
-ex : `pg_dump -u postgres -h localhost test > db.pgsql`
+ex : `pg_dump -u postgres -h localhost test > db.pgsql`  
