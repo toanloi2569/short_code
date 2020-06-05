@@ -1,29 +1,29 @@
 
 # Docker
-**list containers**
+**list containers**  
 `docker ps -a`
 
-**remove container**
+**remove container**  
 `docker rm $ID`
 
-**list images**
+**list images**  
 `docker images`
 
-**remove image**
+**remove image**  
 `docker rmi $ID`
 
-**network**
-`docker network ls`
+**network**  
+`docker network ls`  
 `docker network inspect $ID`
 
-**inspect**
+**inspect**  
 `docker inspect $ID`
 
 # Docker-compose
-**build** 
+**build**  
 `docker-compose up -d`
 
-**exec**
+**exec**  
 - exec bash : `docker-compose exec -it $ID bash`
-- run command of specific service : `docker-compose exec -d SERVICE COMAND`
+- run command of specific service : `docker-compose exec -d SERVICE COMAND`  
 ex : `docker-compose exec -d cvparser python server.py`
